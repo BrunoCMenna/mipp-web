@@ -1,0 +1,26 @@
+#contacto h2,
+h4 {
+  color: var(--secondary);
+}
+
+#contacto span {
+  color: black !important;
+}
+
+#contacto span a {
+  text-decoration: none;
+  color: black;
+}
+
+#contacto a:hover {
+  animation: pulse infinite 1s;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}

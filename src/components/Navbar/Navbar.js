@@ -1,57 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 import "../Navbar/Navbar.css";
 
-const Navbar = () => {
+const CustomNavbar = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavCollapse = () => setExpanded(!expanded);
+
+  const handleSelect = () => setExpanded(false); // Restablecer el estado del menú cuando se selecciona un elemento de la barra de navegación
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-      <div className="container-fluid">
-        <img src="img/Original.png" className="img-fluid navbar-logo" />
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item mx-2">
-              <a className="nav-link" aria-current="page" href="#">
-                Nosotros
-              </a>
-            </li>
-            <li className="nav-item mx-2">
-              <a className="nav-link" href="#">
-                Servicios
-              </a>
-            </li>
-            <li className="nav-item mx-2">
-              <a className="nav-link" href="#">
-                Clientes
-              </a>
-            </li>
-            <li className="nav-item mx-1">
-              <a className="nav-link" href="#">
-                Historia
-              </a>
-            </li>
-            <li className="nav-item mx-2">
-              <a className="nav-link" href="#">
-                Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar
+      expand="lg"
+      fixed="top"
+      bg="white"
+      expanded={expanded}
+      onSelect={handleSelect}
+      className="p-0"
+    >
+      <Container>
+        <Navbar.Brand href="/">
+          <img
+            src="img/Original.png"
+            className="img-fluid navbar-logo"
+            alt="Logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" onClick={handleNavCollapse} />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="ms-auto">
+            <Nav.Link className="navbar-link" href="#top">
+              INICIO
+            </Nav.Link>
+            <Nav.Link className="navbar-link" href="#nosotros">
+              NOSOTROS
+            </Nav.Link>
+            <Nav.Link className="navbar-link" href="#servicios">
+              SERVICIOS
+            </Nav.Link>
+            <Nav.Link className="navbar-link" href="#clientes">
+              CLIENTES
+            </Nav.Link>
+            <Nav.Link className="navbar-link" href="#historia">
+              HISTORIA
+            </Nav.Link>
+            <Nav.Link className="navbar-link" href="#contacto">
+              CONTACTO
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default CustomNavbar;

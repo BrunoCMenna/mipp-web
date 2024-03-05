@@ -5,15 +5,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  margin-top: 91px;
+  padding: 0 5rem 0 5rem;
+  margin-top: 95px;
 }
 
 .intro h1 {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 7vw;
-  padding: 0 5rem 0 5rem;
+  font-size: 6vw;
+  padding: 0;
   text-shadow: 2px 2px 50px black;
 }
 
@@ -23,6 +24,6 @@
     background-position: -300px;
   }
   .intro h1 {
-    font-size: 13vw;
+    font-size: 12vw;
   }
 }
