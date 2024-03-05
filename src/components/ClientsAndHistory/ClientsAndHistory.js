@@ -1,29 +1,21 @@
 import React from "react";
 import "./ClientsAndHistory.css";
 
-const images = [
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-  "img/original.png",
-];
+import bannerPng from "../../img/banner.JPG";
+import clientLogos from "../../images.js";
 
 const ClientsAndHistory = () => {
   return (
     <div>
       <div className="ourclients-bg" id="clientes">
-        <div className="container text-center text-lg-end py-5">
+        <div className="container text-center text-lg-end pt-5">
           <div>
             <h1 className="me-xxl-5 fw-semibold mb-5">
               ¿CON QUIÉNES TRABAJAMOS?
             </h1>
           </div>
           <div className="row justify-content-center gap-md-5 mt-4">
-            {images.map((image, index) => (
+            {clientLogos.map((image, index) => (
               <div key={index} className="client-item mb-4">
                 <img src={image} alt={`imagen-${index}`} />
               </div>
@@ -31,7 +23,7 @@ const ClientsAndHistory = () => {
           </div>
         </div>
         <div className="banner">
-          <img src="img/historia.jpg" className="" />
+          <img src={bannerPng} alt="banner" className="" />
         </div>
       </div>
       <div className="history-bg" id="historia">

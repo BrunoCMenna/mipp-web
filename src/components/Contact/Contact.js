@@ -5,6 +5,7 @@ import { FaPhone } from "react-icons/fa6";
 import { SocialIcon } from "react-social-icons";
 
 import "./Contact.css";
+import logo from "../../img/logo.png";
 
 const Contact = () => {
   return (
@@ -57,7 +58,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="logo align-self-center p-2">
-          <img src="img/Original.png" />
+          <img src={logo} />
         </div>
       </div>
       {/* <div

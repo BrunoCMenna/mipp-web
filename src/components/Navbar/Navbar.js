@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import "../Navbar/Navbar.css";
+import logo from "../../img/logo.png";
 
 const CustomNavbar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -22,11 +23,7 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="/">
-          <img
-            src="img/Original.png"
-            className="img-fluid navbar-logo"
-            alt="Logo"
-          />
+          <img src={logo} className="img-fluid navbar-logo" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" onClick={handleNavCollapse} />
         <Navbar.Collapse id="navbarNav">
