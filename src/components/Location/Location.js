@@ -17,7 +17,7 @@ const Location = () => {
           ></iframe>
         </div>
         <div className="text-white">
-          <h1 className="mb-5 fw-semibold text-end text-md-start">
+          <h1 className="mb-4 fw-semibold text-end text-md-start">
             ¿DÓNDE NOS ENCONTRAMOS?
           </h1>
           <p>

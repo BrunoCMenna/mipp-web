@@ -1,0 +1,11 @@
+.about-bg {
+  background-color: var(--primary);
+  color: white;
+}
+
+.about-img img {
+  width: 100%;
+  height: 480px;
+  border-radius: 7rem;
+  object-fit: cover;
+}

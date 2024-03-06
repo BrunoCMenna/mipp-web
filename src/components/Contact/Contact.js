@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="logo align-self-center p-2">
+        <div className="logo align-self-center ms-2">
           <img src={logo} />
         </div>
       </div>

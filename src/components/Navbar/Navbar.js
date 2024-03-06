@@ -1,55 +1,63 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
+import { IoIosMenu } from "react-icons/io";
+import { IoCloseOutline } from "react-icons/io5";
+
 import "../Navbar/Navbar.css";
 import logo from "../../img/logo.png";
 
 const CustomNavbar = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleNavCollapse = () => setExpanded(!expanded);
+  const toggleMenu = (element) => {
+    setMenuOpen(!menuOpen);
+  };
 
-  const handleSelect = () => setExpanded(false); // Restablecer el estado del menú cuando se selecciona un elemento de la barra de navegación
+  const scrollToElement = (element) => {
+    const offsetTop = document.querySelector(element).offsetTop;
+    const finalScrollPosition = offsetTop - 90;
+    window.scrollTo({
+      top: finalScrollPosition,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <Navbar
-      expand="lg"
-      fixed="top"
-      bg="white"
-      expanded={expanded}
-      onSelect={handleSelect}
-      className="p-0"
-    >
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid navbar-logo" alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarNav" onClick={handleNavCollapse} />
-        <Navbar.Collapse id="navbarNav">
-          <Nav className="ms-auto">
-            <Nav.Link className="navbar-link" href="#top">
-              INICIO
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#nosotros">
-              NOSOTROS
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#servicios">
-              SERVICIOS
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#clientes">
-              CLIENTES
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#historia">
-              HISTORIA
-            </Nav.Link>
-            <Nav.Link className="navbar-link" href="#contacto">
-              CONTACTO
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <header className="header">
+      <a href="/">
+        <img src={logo} className="logo" />
+      </a>
+      <div className="icons">
+        {menuOpen ? (
+          <button className="open-menu-icon" onClick={toggleMenu}>
+            <IoCloseOutline />
+          </button>
+        ) : (
+          <button className="close-menu-icon" onClick={toggleMenu}>
+            <IoIosMenu />
+          </button>
+        )}
+      </div>
+      <nav className={`navbar ${menuOpen && "navbar_active"}`}>
+        <a href="#top" onClick={toggleMenu}>
+          Inicio
+        </a>
+        <a href="#nosotros" onClick={() => toggleMenu()}>
+          Nosotros
+        </a>
+        <a href="#servicios" onClick={toggleMenu}>
+          Servicios
+        </a>
+        <a href="#clientes" onClick={toggleMenu}>
+          Clientes
+        </a>
+        <a href="#historia" onClick={toggleMenu}>
+          Historia
+        </a>
+        <a href="#contacto" onClick={toggleMenu}>
+          Contacto
+        </a>
+      </nav>
+    </header>
   );
 };
 
