@@ -28,16 +28,16 @@ const CustomNavbar = () => {
       </a>
       <div className="icons">
         {menuOpen ? (
-          <button className="open-menu-icon" onClick={toggleMenu}>
+          <button className="close-menu-icon" onClick={toggleMenu}>
             <IoCloseOutline />
           </button>
         ) : (
-          <button className="close-menu-icon" onClick={toggleMenu}>
+          <button className="open-menu-icon" onClick={toggleMenu}>
             <IoIosMenu />
           </button>
         )}
       </div>
-      <nav className={`navbar ${menuOpen && "navbar_active"}`}>
+      <nav className={`p-0 navbar ${menuOpen && "navbar_active"}`}>
         <a href="#top" onClick={toggleMenu}>
           Inicio
         </a>

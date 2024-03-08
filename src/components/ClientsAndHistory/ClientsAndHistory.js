@@ -10,7 +10,10 @@ const ClientsAndHistory = () => {
       <div className="ourclients-bg" id="clientes">
         <div className="container text-center text-lg-end pt-5">
           <div>
-            <h1 className="me-xxl-5 fw-semibold mb-5">
+            <h1
+              className="me-xxl-5 fw-semibold mb-5 pb-3"
+              style={{ marginTop: "7rem" }}
+            >
               ¿CON QUIÉNES TRABAJAMOS?
             </h1>
           </div>

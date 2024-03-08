@@ -1,7 +1,7 @@
 .intro {
   background-image: url(../../img/landing.JPG);
   width: 100%;
-  height: 45vw;
+  height: 50vw;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -20,8 +20,10 @@
 
 @media (max-width: 768px) {
   .intro {
+    width: 100%;
     height: 55vh;
-    background-position: -300px;
+    background-position: center;
+    background-size: cover;
   }
   .intro h1 {
     font-size: 12vw;

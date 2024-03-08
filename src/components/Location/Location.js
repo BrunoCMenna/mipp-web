@@ -4,7 +4,7 @@ import "./Location.css";
 const Location = () => {
   return (
     <div className="location-bg">
-      <div className="container d-flex flex-md-nowrap flex-wrap-reverse p-4 p-md-5 gap-5 justify-content-center">
+      <div className="container d-flex flex-md-nowrap flex-wrap-reverse px-4 py-5 p-md-5 gap-5 justify-content-center">
         <div className="m-auto map-wrapper">
           <iframe
             className="map"

@@ -5,7 +5,7 @@ import aboutImg from "../../img/about.JPG";
 const About = () => {
   return (
     <div className="about-bg" id="nosotros">
-      <div className="container d-flex flex-md-nowrap flex-wrap-reverse p-4 p-md-5 gap-3 justify-content-center">
+      <div className="container d-flex flex-md-nowrap flex-wrap-reverse px-4 py-5 p-md-5 gap-3 justify-content-center">
         <div className="about-img">
           <img src={aboutImg} />
         </div>
