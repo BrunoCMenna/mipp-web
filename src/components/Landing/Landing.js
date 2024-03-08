@@ -4,7 +4,7 @@ import "../Landing/Landing.css";
 const Landing = () => {
   return (
     <div className="d-flex justify-content-center intro">
-      <h1 className="animate__animated animate__fadeIn">
+      <h1 className="animate__animated animate__fadeInDown">
         APOSTANDO A LA INDUSTRIA ARGENTINA
       </h1>
     </div>

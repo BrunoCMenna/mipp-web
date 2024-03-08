@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  background-position-x: 330px;
+  /* background-position-x: 330px; */
 }
 
 .service-content h1 {
@@ -19,23 +19,27 @@
   margin-top: -8rem;
   margin-bottom: -8rem;
   margin-left: -6rem;
+  position: relative;
+  z-index: 0;
 }
 
-@media (768px < width < 992px) {
+@media (768px <= width < 992px) {
   .service-content {
     padding: 5rem;
     margin-top: -2rem;
     margin-bottom: -5rem;
-    transform: scale(1.05);
   }
 }
 
-@media (width <= 768px) {
+@media (width < 768px) {
   .service-content {
     padding: 14rem 2rem 2rem 2rem;
     margin-left: 0;
     margin-top: -12rem;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
+  }
+  .services-bg {
+    background-position: center;
   }
 }

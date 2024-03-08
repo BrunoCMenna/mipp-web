@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,6 +9,7 @@
   align-items: center;
   z-index: 100;
   padding: 0 10%;
+  transition: 0.3s;
 }
 
 .logo {
@@ -78,6 +79,8 @@
     transition: 0.2s ease-in-out;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    transform: translateY(-1px);
+    z-index: 99;
   }
 
   .navbar a {

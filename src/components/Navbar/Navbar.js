@@ -12,17 +12,20 @@ const CustomNavbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const scrollToElement = (element) => {
-    const offsetTop = document.querySelector(element).offsetTop;
-    const finalScrollPosition = offsetTop - 90;
-    window.scrollTo({
-      top: finalScrollPosition,
-      behavior: "smooth",
-    });
+  var prevScrollpos = window.scrollY;
+  window.onscroll = function () {
+    var currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-100px";
+      setMenuOpen(false);
+    }
+    prevScrollpos = currentScrollPos;
   };
 
   return (
-    <header className="header">
+    <header className="header" id="navbar">
       <a href="/">
         <img src={logo} className="logo" />
       </a>

@@ -42,17 +42,28 @@ const Contact = () => {
                   network="instagram"
                   bgColor="var(--secondary)"
                   title="Instagram"
+                  className="wow animate__animated animate__flipInX"
                 />
               </a>
             </div>
             <div>
               <a href="http://linkedin.com" target="_blank">
-                <SocialIcon network="linkedin" title="Linkedin" />
+                <SocialIcon
+                  network="linkedin"
+                  title="Linkedin"
+                  className="wow animate__animated animate__flipInX"
+                  data-wow-delay="0.3s"
+                />
               </a>
             </div>
             <div>
               <a href="http://linkedin.com" target="_blank">
-                <SocialIcon network="whatsapp" title="Whatsapp" />
+                <SocialIcon
+                  network="whatsapp"
+                  title="Whatsapp"
+                  className="wow animate__animated animate__flipInX"
+                  data-wow-delay="0.5s"
+                />
               </a>
             </div>
           </div>
