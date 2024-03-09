@@ -1,15 +1,6 @@
-import React, { useEffect } from "react";
-import WOW from "wowjs";
-
 import "./OurServices.css";
 
 const OurServices = () => {
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
-
   return (
     <div className="services-bg" id="servicios">
       <div className="container d-flex text-white">

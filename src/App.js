@@ -6,8 +6,16 @@ import Navbar from "./components/Navbar/Navbar";
 import ClientsAndHistory from "./components/ClientsAndHistory/ClientsAndHistory";
 import About from "./components/About/About";
 import OurServices from "./components/OurServices/OurServices";
+import { useEffect } from "react";
+import WOW from "wowjs";
 
 function App() {
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+      mobile: true,
+    }).init();
+  }, []);
   return (
     <div className="App">
       <Navbar />

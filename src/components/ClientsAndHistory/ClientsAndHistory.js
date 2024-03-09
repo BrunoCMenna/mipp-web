@@ -1,4 +1,3 @@
-import React from "react";
 import "./ClientsAndHistory.css";
 
 import bannerPng from "../../img/banner.JPG";
@@ -19,12 +18,12 @@ const ClientsAndHistory = () => {
           </div>
           <div className="row justify-content-center gap-md-5 mt-4">
             {clientLogos.map((image, index) => (
-              <div
-                key={index}
-                className="client-item mb-4 wow animate__animated animate__flipInX"
-                data-wow-delay="0.3s"
-              >
-                <img src={image} alt={`imagen-${index}`} />
+              <div key={index} className="client-item mb-4">
+                <img
+                  src={image}
+                  alt={`imagen-${index}`}
+                  className="wow animate__animated animate__flipInX"
+                />
               </div>
             ))}
           </div>
