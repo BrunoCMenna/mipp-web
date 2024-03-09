@@ -5,4 +5,5 @@
 
 body {
   font-family: rubik;
+  overflow-x: hidden;
 }

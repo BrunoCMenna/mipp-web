@@ -7,15 +7,14 @@ import ClientsAndHistory from "./components/ClientsAndHistory/ClientsAndHistory"
 import About from "./components/About/About";
 import OurServices from "./components/OurServices/OurServices";
 import { useEffect } from "react";
-import WOW from "wowjs";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    new WOW.WOW({
-      live: false,
-      mobile: true,
-    }).init();
+    AOS.init();
   }, []);
+
   return (
     <div className="App">
       <Navbar />

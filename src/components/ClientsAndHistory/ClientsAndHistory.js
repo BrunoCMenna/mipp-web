@@ -10,7 +10,8 @@ const ClientsAndHistory = () => {
         <div className="container text-center text-lg-end pt-5">
           <div>
             <h1
-              className="me-xxl-5 fw-semibold mb-5 pb-3 wow animate__animated animate__fadeInRight"
+              data-aos="fade-left"
+              className="me-xxl-5 fw-semibold mb-5 pb-3"
               style={{ marginTop: "7rem" }}
             >
               ¿CON QUIÉNES TRABAJAMOS?
@@ -22,32 +23,30 @@ const ClientsAndHistory = () => {
                 <img
                   src={image}
                   alt={`imagen-${index}`}
-                  className="wow animate__animated animate__flipInX"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
                 />
               </div>
             ))}
           </div>
         </div>
         <div className="banner">
-          <img src={bannerPng} alt="banner" className="" />
+          <img src={bannerPng} alt="banner" />
         </div>
       </div>
       <div className="history-bg" id="historia">
         <div className="container p-4 p-md-5">
-          <h1 className="pb-lg-5 wow animate__animated animate__fadeInLeft">
+          <h1 data-aos="fade-right" className="pb-lg-5">
             ¿CÚAL ES NUESTRA HISTORIA?
           </h1>
-          <div
-            data-wow-duration="1.5s"
-            className="d-flex flex-wrap flex-md-nowrap gap-3 py-4 wow animate__animated animate__fadeIn"
-          >
-            <p>
+          <div className="d-flex flex-wrap flex-md-nowrap gap-3 py-4">
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
               suscipit quo ipsa eveniet. Nostrum placeat, veniam quisquam vero
               atque cumque neque! Autem cupiditate sit dignissimos culpa
               reprehenderit! Suscipit, vero soluta.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
               suscipit quo ipsa eveniet. Nostrum placeat, veniam quisquam vero
               atque cumque neque! Autem cupiditate sit dignissimos culpa

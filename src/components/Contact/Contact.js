@@ -8,9 +8,9 @@ import logo from "../../img/logo.png";
 
 const Contact = () => {
   return (
-    <div id="contacto" className="">
+    <div id="contacto">
       <div className="container d-flex justify-content-between mx-auto py-5">
-        <div className="">
+        <div>
           <h2 className="mb-3 fw-semibold">CONTACTANOS</h2>
 
           <h4 className="mb-2">
@@ -41,7 +41,8 @@ const Contact = () => {
                   network="instagram"
                   bgColor="var(--secondary)"
                   title="Instagram"
-                  className="wow animate__animated animate__flipInX"
+                  data-aos="zoom-out"
+                  data-aos-offset="50"
                 />
               </a>
             </div>
@@ -50,8 +51,9 @@ const Contact = () => {
                 <SocialIcon
                   network="linkedin"
                   title="Linkedin"
-                  className="wow animate__animated animate__flipInX"
-                  data-wow-delay="0.3s"
+                  data-aos="zoom-out"
+                  data-aos-delay="200"
+                  data-aos-offset="50"
                 />
               </a>
             </div>
@@ -60,8 +62,9 @@ const Contact = () => {
                 <SocialIcon
                   network="whatsapp"
                   title="Whatsapp"
-                  className="wow animate__animated animate__flipInX"
-                  data-wow-delay="0.5s"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                  data-aos-offset="50"
                 />
               </a>
             </div>
@@ -71,11 +74,12 @@ const Contact = () => {
           <img src={logo} />
         </div>
       </div>
-      {/* <div
+      {/* <hr style={{ opacity: "0.1", margin: "0" }} />
+      <div
         className="w-100 text-center p-4"
         style={{
-          backgroundColor: "var(--secondary)",
-          color: "white",
+          backgroundColor: "white",
+          color: "black",
           fontSize: "15px",
           fontWeight: "1",
         }}
