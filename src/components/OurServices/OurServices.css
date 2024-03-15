@@ -5,7 +5,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  /* background-position-x: 330px; */
 }
 
 .service-content h1 {
@@ -15,7 +14,7 @@
 .service-content {
   background: var(--secondary);
   padding: 10rem 4rem 5rem 4rem;
-  border-radius: 11rem;
+  border-radius: 9rem;
   margin-top: -8rem;
   margin-bottom: -8rem;
   margin-left: -6rem;
@@ -25,21 +24,27 @@
 
 @media (768px <= width < 992px) {
   .service-content {
-    padding: 5rem;
-    margin-top: -2rem;
-    margin-bottom: -5rem;
+    padding: 13rem 2rem 3rem 2rem;
+    margin-left: 0;
+    margin-top: -12rem;
+    max-width: 550px;
+    margin-left: 5rem;
   }
 }
 
 @media (width < 768px) {
   .service-content {
-    padding: 14rem 2rem 2rem 2rem;
+    padding: 14rem 2rem 4rem 2rem;
     margin-left: 0;
     margin-top: -12rem;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
   }
   .services-bg {
     background-position: center;
+  }
+}
+
+@media (width > 992px) {
+  .services-bg {
+    background-position: 300px;
   }
 }

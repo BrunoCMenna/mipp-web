@@ -3,7 +3,13 @@
   --secondary: #0033a1;
 }
 
-body {
+#root {
   font-family: rubik;
   overflow-x: hidden;
+}
+
+/* z index fix */
+.aos-init[data-aos][data-aos].aos-animate {
+  position: relative;
+  transform: none;
 }

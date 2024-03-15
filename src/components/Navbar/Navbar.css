@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,7 +9,8 @@
   align-items: center;
   z-index: 100;
   padding: 0 10%;
-  transition: 0.3s;
+  transition: 0.4s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .logo {
@@ -17,16 +18,32 @@
 }
 
 .navbar a {
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-decoration: none;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  color: black;
+  margin: 0rem 1.25rem 0rem 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: inline-block;
 }
 
 .navbar a:hover {
   color: var(--primary);
-  animation: pulse infinite 5s;
+  /* animation: pulse normal 1s; */
+}
+
+.navbar a::after {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  background-color: var(--primary);
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }
 
 .icons {
@@ -79,32 +96,31 @@
     transition: 0.2s ease-in-out;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    transform: translateY(-1px);
-    z-index: 99;
   }
 
   .navbar a {
     display: block;
     font-size: 1.1rem;
     padding: 1rem;
+    margin: 0;
     text-align: center;
     color: white;
   }
-}
 
-.navbar_active {
-  visibility: visible;
-  z-index: -1;
-  opacity: 1;
-  transform: translateY(0);
-  transition: 0.3s ease-in-out;
-}
+  /* disables underline effect on mobile navbar */
+  .navbar a::after {
+    position: relative;
+  }
 
-.navbar_active a:hover {
-  background-color: rgba(256, 256, 256, 0.1);
-  color: white;
-}
+  .navbar_active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+  }
 
-.navbar_active a {
-  margin-left: unset;
+  .navbar_active a:hover {
+    background-color: rgba(256, 256, 256, 0.1);
+    color: white;
+  }
 }

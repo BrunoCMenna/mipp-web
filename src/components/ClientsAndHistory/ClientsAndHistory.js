@@ -12,19 +12,20 @@ const ClientsAndHistory = () => {
             <h1
               data-aos="fade-left"
               className="me-xxl-5 fw-semibold mb-5 pb-3"
-              style={{ marginTop: "7rem" }}
+              style={{ marginTop: "9rem" }}
             >
               ¿CON QUIÉNES TRABAJAMOS?
             </h1>
           </div>
-          <div className="row justify-content-center gap-md-5 mt-4">
+          <div className="row justify-content-center gap-md-5 m-4">
             {clientLogos.map((image, index) => (
               <div key={index} className="client-item mb-4">
                 <img
                   src={image}
                   alt={`imagen-${index}`}
-                  data-aos="flip-left"
+                  data-aos="zoom-out"
                   data-aos-delay="300"
+                  data-aos-duration="700"
                 />
               </div>
             ))}

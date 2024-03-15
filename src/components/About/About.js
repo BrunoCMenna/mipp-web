@@ -4,8 +4,8 @@ import aboutImg from "../../img/about.JPG";
 const About = () => {
   return (
     <div className="about-bg" id="nosotros">
-      <div className="container d-flex flex-md-nowrap flex-wrap-reverse px-4 py-5 p-md-5 gap-3 justify-content-center">
-        <div data-wow-duration="0.3s" className="about-img" data-aos="fade-up">
+      <div className="container d-flex flex-lg-nowrap flex-wrap-reverse px-4 py-5 p-md-5 gap-3 justify-content-center">
+        <div className="about-img" data-aos="fade-up">
           <img src={aboutImg} />
         </div>
         <div className="d-flex flex-column gap-4 ms-md-4">
