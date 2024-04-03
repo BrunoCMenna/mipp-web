@@ -8,33 +8,48 @@ const OurServices = () => {
           data-aos="fade-up"
           className="service-content d-flex flex-column col-sm-12 col-lg-8 col-xl-8 col-xxl-6"
         >
-          <h1 data-aos="fade-up">¿CUÁLES SON NUESTROS SERVICIOS?</h1>
+          <h1 data-aos="fade-up" className="mb-3">
+            ¿CUÁLES SON NUESTROS SERVICIOS?
+          </h1>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            pariatur libero amet aliquam vel repellendus delectus magni autem
-            cum optio, perspiciatis voluptatum corrupti aspernatur, corporis
-            eveniet eos ex reprehenderit quos.
+            En MIPP MATRICERÍA E INYECCIÓN DE PLÁSTICOS S.R.L., nos
+            especializamos en la fabricación de moldes para inyección y soplado,
+            asegurando cumplir con los estándares técnicos y legales requeridos
+            por nuestros clientes del sector industrial y plástico.
           </p>
+          <p>Nuestros servicios se distinguen por:</p>
           <ul className="d-flex flex-column gap-4">
-            <li data-aos="fade-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam libero nam dolores repudiandae ad, hic ea. Aut
-              necessitatibus dolor perspiciatis sed voluptatem impedit magnam
-              culpa rerum, consequuntur veritatis illum commodi!
+            <li data-aos="fade-in">
+              <b>Consideración detallada de aspectos clave: </b>
+              Nos dedicamos a comprender minuciosamente el plano de la pieza a
+              moldear, diseñando las líneas de partición, la zona de entrada, la
+              ubicación de botadores y otros detalles relevantes para garantizar
+              la eficiencia en la construcción del molde.
             </li>
-            <li data-aos="fade-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <li data-aos="fade-in">
+              <b>Selección cuidadosa de materiales:</b> Escogemos los materiales
+              para la construcción de los moldes de manera precisa, teniendo en
+              cuenta las necesidades específicas de cada proyecto y la calidad
+              deseada del producto final.
             </li>
-            <li data-aos="fade-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              odit repellendus nulla minus vel placeat alias consectetur soluta,
-              dolore.
+            <li data-aos="fade-in">
+              <b>Implementación de Control Numérico Computarizado:</b>{" "}
+              Utilizamos esta tecnología para asegurar la precisión y calidad en
+              la fabricación de los moldes, garantizando resultados consistentes
+              y de alto nivel.
             </li>
-            <li data-aos="fade-left">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus libero dolore explicabo distinctio ut, recusandae
-              impedit adipisci commodi nesciunt voluptas est deserunt, eveniet
-              quidem quas omnis fugit velit sequi laboriosam.
+            <li data-aos="fade-in">
+              <b>Utilización de maquinaria avanzada:</b> Nuestro equipamiento de
+              última tecnología nos permite ofrecer ventajas adicionales como
+              mayor precisión, uniformidad en los productos fabricados,
+              flexibilidad para cambios en el diseño en un tiempo reducido, y
+              capacidad para atender pedidos urgentes.
+            </li>
+            <li data-aos="fade-in">
+              <b>Trabajo con una amplia variedad de materiales plásticos:</b>{" "}
+              Desde polipropileno hasta nylon, estamos preparados para trabajar
+              con diversos materiales, adaptándonos a las necesidades
+              específicas de cada proyecto y cliente.
             </li>
           </ul>
         </div>

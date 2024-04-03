@@ -30,7 +30,7 @@ const Landing = () => {
         APOSTANDO A LA INDUSTRIA ARGENTINA
       </h1>
       <span
-        className={`fs-1 mt-auto mb-4 down-icon ${
+        className={`fs-1 mt-auto mb-5 down-icon ${
           scrolled && "down-icon-remove"
         }`}
       >

@@ -10,12 +10,13 @@
 }
 
 .intro h1 {
+  width: 90%;
   display: flex;
   align-items: center;
   text-align: center;
   font-size: 10vmin;
   text-shadow: 2px 2px 50px black;
-  padding: 0 1rem 0 1rem;
+  /* padding: 0 3rem 0 3rem; */
   text-wrap: balance;
   align-self: center !important;
 }

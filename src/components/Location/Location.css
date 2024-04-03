@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.location-bg p {
+  text-wrap: balace;
+}
+
 .map-wrapper {
   width: 100rem;
 }

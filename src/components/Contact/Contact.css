@@ -5,6 +5,7 @@ h4 {
 
 #contacto span {
   color: black !important;
+  font-weight: 400;
 }
 
 #contacto span a {
@@ -23,4 +24,5 @@ h4 {
 .logo img {
   width: 100%;
   height: auto;
+  background: linear-gradient();
 }

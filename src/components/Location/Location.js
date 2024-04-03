@@ -3,7 +3,7 @@ import "./Location.css";
 const Location = () => {
   return (
     <div className="location-bg">
-      <div className="container d-flex flex-wrap-reverse flex-md-nowrap  px-4 py-5 p-md-5 gap-5 justify-content-center">
+      <div className="container d-flex flex-wrap-reverse flex-md-nowrap  px-3 py-5 p-md-5 gap-5 justify-content-center">
         <div data-aos="zoom-in" className="m-auto map-wrapper">
           <iframe
             className="map"
@@ -18,27 +18,24 @@ const Location = () => {
         <div className="text-white">
           <h1
             data-aos="fade-left"
+            data-aos-duration="1000"
             className="mb-4 fw-semibold text-end text-md-start"
           >
             ¿DÓNDE NOS ENCONTRAMOS?
           </h1>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            dolorem! Soluta nam rem, porro veritatis fugiat dignissimos, nisi
-            praesentium officiis magnam minus fugit ipsa nulla. Doloremque sint
-            beatae eius? Consectetur?
+            Nuestras instalaciones están ubicadas en el lote 21 del Parque
+            Industrial de Roldán, Santa Fe - Argentina.
           </p>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            dolorem! Soluta nam rem, porro veritatis fugiat dignissimos, nisi
-            praesentium officiis magnam minus fugit ipsa nulla. Doloremque sint
-            beatae eius? Consectetur?
+            Contamos con una superficie total de 3000m² cubiertos sobre un
+            terreno de 9000m².
           </p>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-            dolorem! Soluta nam rem, porro veritatis fugiat dignissimos, nisi
-            praesentium officiis magnam minus fugit ipsa nulla. Doloremque sint
-            beatae eius? Consectetur?
+            Nuestra fábrica está equipada con 17 máquinas inyectoras de última
+            generación, con capacidades que van desde 60 T hasta 800 T de
+            cierre, abarcando una totalidad de inyección que va desde 1 gramo
+            hasta 4018 gramos.
           </p>
         </div>
       </div>

@@ -9,9 +9,9 @@ import logo from "../../img/logo.png";
 const Contact = () => {
   return (
     <div id="contacto">
-      <div className="container d-flex justify-content-between mx-auto py-5">
+      <div className="container d-flex justify-content-between mx-auto py-5 px-3">
         <div>
-          <h2 className="mb-3 fw-semibold">CONTACTANOS</h2>
+          <h2 className="mb-3 fw-semibold my-2">CONTACTANOS</h2>
 
           <h4 className="mb-2">
             <MdEmail className="fs-5" />
@@ -27,16 +27,16 @@ const Contact = () => {
             <span className="h6">
               {" "}
               <a
-                href="http://maps.google.com/maps?q=210+Louise+Ave,+Nashville,+TN+37203"
+                href="https://maps.app.goo.gl/ETUWBGC7oZb44XLZ9"
                 target="_blank"
               >
-                Calle Falsa 123, Roldan, Santa Fe 31231.
+                Lote 21 Parque Industrial de Roldán, Santa Fe, Argentina.
               </a>
             </span>
           </h4>
-          <div className="d-flex gap-3 mt-4">
+          <div className="d-flex gap-3 mt-5">
             <div>
-              <a href="http://instagram.com" target="_blank">
+              <a href="https://www.instagram.com/mippsrl" target="_blank">
                 <SocialIcon
                   network="instagram"
                   bgColor="var(--secondary)"
@@ -47,10 +47,13 @@ const Contact = () => {
               </a>
             </div>
             <div>
-              <a href="http://linkedin.com" target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090602692290&mibextid=JRoKGi"
+                target="_blank"
+              >
                 <SocialIcon
-                  network="linkedin"
-                  title="Linkedin"
+                  network="facebook"
+                  title="Facebook"
                   data-aos="zoom-out"
                   data-aos-delay="200"
                   data-aos-offset="50"
@@ -58,7 +61,7 @@ const Contact = () => {
               </a>
             </div>
             <div>
-              <a href="http://linkedin.com" target="_blank">
+              <a href="http://wa.me/543413710649" target="_blank">
                 <SocialIcon
                   network="whatsapp"
                   title="Whatsapp"
@@ -70,22 +73,21 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="logo align-self-center ms-2">
+        <div className="logo align-self-start align-self-md-center ms-2">
           <img src={logo} />
         </div>
       </div>
-      {/* <hr style={{ opacity: "0.1", margin: "0" }} />
       <div
-        className="w-100 text-center p-4"
+        className="w-100 text-center p-3"
         style={{
-          backgroundColor: "white",
+          backgroundColor: "rgb(0,0,0,0.05)",
           color: "black",
-          fontSize: "15px",
+          fontSize: "14px",
           fontWeight: "1",
         }}
       >
-        Copyright © 2024 mipp.com.ar
-      </div> */}
+        © 2024 - MIPP S.R.L.
+      </div>
     </div>
   );
 };
