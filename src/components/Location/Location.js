@@ -23,15 +23,15 @@ const Location = () => {
           >
             ¿DÓNDE NOS ENCONTRAMOS?
           </h1>
-          <p data-aos="fade-up">
+          <p data-aos="fade-in" data-aos-duration="1000">
             Nuestras instalaciones están ubicadas en el lote 21 del Parque
             Industrial de Roldán, Santa Fe - Argentina.
           </p>
-          <p data-aos="fade-up">
+          <p data-aos="fade-in" data-aos-duration="1000">
             Contamos con una superficie total de 3000m² cubiertos sobre un
             terreno de 9000m².
           </p>
-          <p data-aos="fade-up">
+          <p data-aos="fade-in" data-aos-duration="1000">
             Nuestra fábrica está equipada con 17 máquinas inyectoras de última
             generación, con capacidades que van desde 60 T hasta 800 T de
             cierre, abarcando una totalidad de inyección que va desde 1 gramo

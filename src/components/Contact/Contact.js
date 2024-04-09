@@ -9,20 +9,22 @@ import logo from "../../img/logo.png";
 const Contact = () => {
   return (
     <div id="contacto">
-      <div className="container d-flex justify-content-between mx-auto py-5 px-3">
+      <div className="container d-flex justify-content-between mx-auto py-4 px-3">
         <div>
           <h2 className="mb-3 fw-semibold my-2">CONTACTANOS</h2>
 
-          <h4 className="mb-2">
+          <h4 className="mb-3">
             <MdEmail className="fs-5" />
 
-            <span className="h6 mx-1"> email@gmail.com</span>
+            <span className="h6 mx-1">
+              <a href="mailto:info@mippsrl.com"> info@mippsrl.com</a>
+            </span>
           </h4>
-          <h4 className="mb-2">
+          <h4 className="mb-3">
             <FaPhone className="fs-6" />
-            <span className="h6 mx-2"> 341-123-1234</span>
+            <span className="h6 mx-2"> 341-684-3153</span>
           </h4>
-          <h4 className="mb-2">
+          <h4 className="mb-3">
             <IoLocationSharp style={{ marginLeft: "-2px" }} />{" "}
             <span className="h6">
               {" "}
@@ -34,7 +36,7 @@ const Contact = () => {
               </a>
             </span>
           </h4>
-          <div className="d-flex gap-3 mt-5">
+          <div className="d-flex gap-3 mt-4">
             <div>
               <a href="https://www.instagram.com/mippsrl" target="_blank">
                 <SocialIcon
@@ -46,7 +48,7 @@ const Contact = () => {
                 />
               </a>
             </div>
-            <div>
+            {/* <div>
               <a
                 href="https://www.facebook.com/profile.php?id=100090602692290&mibextid=JRoKGi"
                 target="_blank"
@@ -59,7 +61,7 @@ const Contact = () => {
                   data-aos-offset="50"
                 />
               </a>
-            </div>
+            </div> */}
             <div>
               <a href="http://wa.me/543413710649" target="_blank">
                 <SocialIcon
@@ -73,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="logo align-self-start align-self-md-center ms-2">
+        <div className="logo align-self-center ms-2 mb-md-4">
           <img src={logo} />
         </div>
       </div>

@@ -47,18 +47,30 @@ const ClientsAndHistory = () => {
           >
             ¿CÚAL ES NUESTRA HISTORIA?
           </h1>
-          <div className="d-flex flex-wrap flex-md-nowrap gap-3 py-4">
-            <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              suscipit quo ipsa eveniet. Nostrum placeat, veniam quisquam vero
-              atque cumque neque! Autem cupiditate sit dignissimos culpa
-              reprehenderit! Suscipit, vero soluta.
+          <div
+            className="d-flex flex-wrap flex-md-nowrap gap-4 py-4"
+            style={{
+              textWrap: "balance",
+            }}
+          >
+            <p data-aos="fade-in">
+              MIPP SRL tuvo sus inicios con su fundador, Omar Alberto Penkala.
+              Se trató de una pequeña empresa ubicada en la ciudad de Villa
+              Gobernador Gálvez. Omar adquirió su oficio y conocimientos tras su
+              paso por la Escuela Técnica durante su adolescencia. Como
+              matricero, se destacaba en ajustar profesionalmente matrices,
+              convirtiéndose en una figura reconocida dentro de la industria
+              plástica.
             </p>
-            <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              suscipit quo ipsa eveniet. Nostrum placeat, veniam quisquam vero
-              atque cumque neque! Autem cupiditate sit dignissimos culpa
-              reprehenderit! Suscipit, vero soluta.
+            <p data-aos="fade-in">
+              A lo largo de los años, su hijo varón, Matías Alberto Penkala, fue
+              adquiriendo conocimientos y enseñanzas de su padre, continuando
+              con la empresa familiar. En el año 2020, ante una expansión en su
+              producción, se montó una nueva planta en el Parque Industrial de
+              Roldán, lo que permitió establecer un predio moderno de 3000 m².
+              Esta expansión no solo implicó la inversión en maquinaria de
+              última tecnología, sino también el desarrollo de nuevos procesos
+              para seguir siendo líderes en la industria.
             </p>
           </div>
         </div>

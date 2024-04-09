@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../Landing/Landing.css";
 import { FaAnglesDown } from "react-icons/fa6";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { debounce } from "lodash";
 
 const Landing = () => {
@@ -25,15 +26,11 @@ const Landing = () => {
   }, []);
 
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center intro">
-      <h1 className="animate__animated animate__fadeIn mt-auto mb-0">
+    <div className="d-flex flex-column align-items-center intro">
+      <h1 className="animate__animated animate__fadeIn mb-auto mt-auto">
         APOSTANDO A LA INDUSTRIA ARGENTINA
       </h1>
-      <span
-        className={`fs-1 mt-auto mb-5 down-icon ${
-          scrolled && "down-icon-remove"
-        }`}
-      >
+      <span className={`mb-5 down-icon ${scrolled && "down-icon-remove"}`}>
         <FaAnglesDown />
       </span>
     </div>
