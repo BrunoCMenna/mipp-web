@@ -13,9 +13,9 @@
 
 .service-content {
   background: var(--secondary);
-  padding: 8rem 3rem 5rem 3rem;
+  padding: 5rem 3rem 5rem 3rem;
   border-radius: 9rem;
-  margin-top: -8rem;
+  margin-top: -5rem;
   margin-bottom: -8rem;
   margin-left: -6rem;
   position: relative;
@@ -24,9 +24,9 @@
 
 @media (768px <= width < 992px) {
   .service-content {
-    padding: 13rem 2rem 3rem 2rem;
+    padding: 6rem 2rem 3rem 2rem;
     margin-left: 0;
-    margin-top: -12rem;
+    margin-top: -5rem;
     max-width: 550px;
     margin-left: 5rem;
   }
@@ -34,12 +34,23 @@
 
 @media (width < 768px) {
   .service-content {
-    padding: 12rem 2rem 4rem 2rem;
+    padding: 5rem 2rem 3rem 2rem;
     margin-left: 0;
-    margin-top: -12rem;
+    margin-top: -5rem;
   }
   .services-bg {
     background-position: center;
+  }
+}
+
+@media (992px <= width < 1200px) {
+  .services-bg {
+    background-position: 300px;
+  }
+  .service-content {
+    padding: 10rem 2rem 4rem 2rem;
+    margin-left: -3rem;
+    margin-top: -4rem;
   }
 }
 

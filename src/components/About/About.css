@@ -1,5 +1,7 @@
 .about-bg {
   background-color: var(--primary);
+  z-index: -1;
+  position: relative;
   color: white;
 }
 
@@ -18,4 +20,27 @@
 
 .about-text {
   flex-shrink: 1.4;
+}
+
+/* background de tramas */
+.about-bg::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+  opacity: 0.05;
+  background-image: url(../../img/tramas.png), url(../../img/tramas.png);
+  background-repeat: no-repeat;
+  background-position: 25% 50%, 86%;
+  background-size: contain;
+}
+
+@media (width <= 992px) {
+  .about-bg::before {
+    background-position: 50% 43%;
+  }
 }
