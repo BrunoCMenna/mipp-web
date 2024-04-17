@@ -43,12 +43,12 @@ const ClientsAndHistory = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="pb-lg-5"
+            className="pb-3 pb-lg-5"
           >
             ¿CÚAL ES NUESTRA HISTORIA?
           </h1>
           <div
-            className="d-flex flex-wrap flex-md-nowrap gap-4 py-4"
+            className="p-wrapper d-flex flex-wrap flex-md-nowrap gap-4"
             style={{
               textWrap: "balance",
             }}
