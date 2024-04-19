@@ -2,7 +2,7 @@ import "./Location.css";
 
 const Location = () => {
   return (
-    <div className="location-bg">
+    <div className="location-bg" id="ubicacion">
       <div className="container d-flex flex-wrap-reverse flex-md-nowrap  px-3 py-5 p-md-5 gap-5 justify-content-center">
         <div data-aos="zoom-in" className="m-auto map-wrapper">
           <iframe

@@ -15,27 +15,30 @@ const CustomNavbar = () => {
   };
 
   useEffect(() => {
-    const handleScroll = debounce(() => {
+    const handleScroll = () => {
       const currentScrollPos = window.scrollY;
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
       } else {
         document.getElementById("navbar").style.top = "-100px";
+        if (menuOpen) {
+          setMenuOpen(false);
+        }
       }
       setPrevScrollpos(currentScrollPos);
-    }, 100);
+    };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollpos]);
+  }, [prevScrollpos, menuOpen]);
 
   return (
     <header className="header" id="navbar">
       <a href="/">
-        <img src={logo} className="logo" alt="MIPP" />
+        <img src={logo} className="logo" alt="MIPP Logo" />
       </a>
       <div className="icons">
         {menuOpen ? (
@@ -63,6 +66,9 @@ const CustomNavbar = () => {
         </a>
         <a href="#historia" onClick={toggleMenu}>
           HISTORIA
+        </a>
+        <a href="#ubicacion" onClick={toggleMenu}>
+          UBICACIÓN
         </a>
         <a href="#contacto" onClick={toggleMenu}>
           CONTACTO

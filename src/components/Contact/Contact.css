@@ -18,11 +18,17 @@ h4 {
 }
 
 .logo {
-  max-width: 200px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .logo img {
-  width: 100%;
+  width: 135%;
   height: auto;
-  background: linear-gradient();
+}
+
+@media (width <= 650px) {
+  .logo img {
+    width: 100%;
+  }
 }

@@ -9,10 +9,7 @@ const About = () => {
           <img src={aboutImg} />
         </div>
         <div className="d-flex flex-column flex-grow-0 about-text">
-          <h1
-            data-aos="fade-left"
-            className="fw-semibold text-end text-md-start mb-4"
-          >
+          <h1 data-aos="fade-left" className="fw-semibold text-start mb-4">
             ¿QUIÉNES SOMOS?
           </h1>
           <p data-aos="fade-up">

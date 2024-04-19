@@ -27,12 +27,13 @@ const Landing = () => {
 
   return (
     <div className="d-flex flex-column align-items-center intro">
-      <h1 className="animate__animated animate__fadeIn mb-auto mt-auto">
-        APOSTANDO A LA INDUSTRIA ARGENTINA
-      </h1>
-      <span className={`mb-5 down-icon ${scrolled && "down-icon-remove"}`}>
+      <div className="animate__animated animate__fadeIn mb-auto mt-auto">
+        <h1 className="pb-2">Eficiencia, innovación y equipo</h1>
+        <h2 className="px-3">La nueva generación de MIPP</h2>
+      </div>
+      {/* <span className={`mb-5 down-icon ${scrolled && "down-icon-remove"}`}>
         <FaAnglesDown />
-      </span>
+      </span> */}
     </div>
   );
 };

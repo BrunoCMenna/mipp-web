@@ -7,13 +7,12 @@ const ClientsAndHistory = () => {
   return (
     <div>
       <div className="ourclients-bg" id="clientes">
-        <div className="container text-center text-lg-end pt-5">
+        <div className="container text-center text-lg-end">
           <div>
             <h1
               data-aos="fade-left"
               data-aos-duration="1000"
-              className="me-xxl-5 fw-semibold pb-3"
-              style={{ marginTop: "9rem" }}
+              className="me-xxl-5 fw-semibold pb-3 text-center"
             >
               ¿CON QUIÉNES TRABAJAMOS?
             </h1>

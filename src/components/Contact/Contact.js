@@ -9,7 +9,7 @@ import logo from "../../img/logo.png";
 const Contact = () => {
   return (
     <div id="contacto">
-      <div className="container d-flex justify-content-between mx-auto py-4 px-3">
+      <div className="container d-flex justify-content-md-between py-4 px-3">
         <div>
           <h2 className="mb-3 fw-semibold my-2">CONTACTANOS</h2>
 
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="logo align-self-center ms-2 mb-md-4">
+        <div className="logo align-self-center ms-sm-4 ms-md-0">
           <img src={logo} />
         </div>
       </div>

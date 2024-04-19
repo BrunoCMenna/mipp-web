@@ -2,13 +2,14 @@ import "./OurServices.css";
 
 const OurServices = () => {
   return (
-    <div className="services-bg" id="servicios">
+    <div className="services-bg">
       <div className="container d-flex text-white">
         <div
+          id="servicios"
           data-aos="fade-up"
           className="service-content d-flex flex-column col-sm-12 col-lg-8 col-xl-8 col-xxl-6"
         >
-          <h1 data-aos="fade-up" className="mb-3">
+          <h1 data-aos="fade-up" className="mb-3 text-center">
             ¿CUÁLES SON NUESTROS SERVICIOS?
           </h1>
           <p data-aos="fade-up">
