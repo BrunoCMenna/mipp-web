@@ -19,7 +19,7 @@ const Location = () => {
           <h1
             data-aos="fade-left"
             data-aos-duration="1000"
-            className="mb-4 fw-semibold text-end text-md-start"
+            className="mb-4 fw-semibold text-center text-md-start"
           >
             ¿DÓNDE NOS ENCONTRAMOS?
           </h1>

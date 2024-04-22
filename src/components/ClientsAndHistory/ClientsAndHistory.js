@@ -42,7 +42,7 @@ const ClientsAndHistory = () => {
           <h1
             data-aos="fade-right"
             data-aos-duration="1000"
-            className="pb-3 pb-lg-5"
+            className="pb-3 pb-lg-5 text-center text-sm-start"
           >
             ¿CÚAL ES NUESTRA HISTORIA?
           </h1>

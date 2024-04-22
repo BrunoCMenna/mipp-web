@@ -29,14 +29,20 @@
   text-wrap: balance;
 }
 
-.down-icon {
-  animation: shakeY infinite 10s;
-  transition: 1s;
-  font-size: 5vh;
+.top-button {
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  animation: fadeInAnimation 1s;
+  opacity: 0.7;
 }
-.down-icon-remove {
-  opacity: 0;
-  transition: 1s;
+
+.top-button svg {
+  transform: scale(1.3);
 }
 
 @media (width < 992px) {
@@ -48,5 +54,14 @@
 @media (width <= 600px) {
   .intro h1 {
     font-size: 13vmin;
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
   }
 }
