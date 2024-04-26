@@ -1,13 +1,13 @@
 const clientLogos = [
   {
-    image: require("./img/clientlogos/liliana.jpg"),
-    url: "",
-    alt: "Liliana Electrodomésticos",
-  },
-  {
     image: require("./img/clientlogos/logo-axel.png"),
     url: "https://www.axelsa.com.ar/",
     alt: "Electrodomesticos AXEL",
+  },
+  {
+    image: require("./img/clientlogos/liliana.jpg"),
+    url: "",
+    alt: "Liliana Electrodomésticos",
   },
   {
     image: require("./img/clientlogos/josetroyano.png"),
