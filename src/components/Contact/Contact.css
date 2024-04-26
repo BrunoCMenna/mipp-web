@@ -17,18 +17,19 @@ h4 {
   animation: pulse infinite 1s;
 }
 
-.logo {
+#contacto .logo {
   width: 100%;
-  max-width: 300px;
-}
-
-.logo img {
-  width: 135%;
   height: auto;
 }
 
-@media (width <= 650px) {
+.logo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.35);
+}
+
+@media (width < 768px) {
   .logo img {
-    width: 100%;
+    transform: scale(1);
   }
 }

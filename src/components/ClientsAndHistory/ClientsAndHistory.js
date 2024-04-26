@@ -12,7 +12,7 @@ const ClientsAndHistory = () => {
             <h1
               data-aos="fade-left"
               data-aos-duration="1000"
-              className="me-xxl-5 fw-semibold pb-3 text-center"
+              className="fw-semibold pb-3 text-center"
             >
               ¿CON QUIÉNES TRABAJAMOS?
             </h1>
@@ -42,7 +42,7 @@ const ClientsAndHistory = () => {
             data-aos-duration="1000"
             className="pb-3 pb-lg-5 text-center text-sm-start"
           >
-            ¿CÚAL ES NUESTRA HISTORIA?
+            ¿CUÁL ES NUESTRA HISTORIA?
           </h1>
           <div
             className="p-wrapper d-flex flex-wrap flex-md-nowrap gap-4"

@@ -16,7 +16,7 @@
   align-items: center;
   text-align: center;
   font-size: 10vmin;
-  text-shadow: 0px 0px 60px black;
+  text-shadow: 0px 10px 30px black;
   text-wrap: balance;
   align-self: center !important;
 }
@@ -27,7 +27,7 @@
   align-items: center;
   text-align: center;
   font-size: 7.5vmin;
-  text-shadow: 0px 0px 60px black;
+  text-shadow: 0px 10px 30px black;
   text-wrap: balance;
 }
 

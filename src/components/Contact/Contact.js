@@ -9,7 +9,7 @@ import logo from "../../img/logo.png";
 const Contact = () => {
   return (
     <div id="contacto">
-      <div className="container d-flex justify-content-md-between py-4 px-3">
+      <div className="container d-flex justify-content-between py-4 px-3">
         <div>
           <h2 className="mb-3 fw-semibold my-2">CONTACTANOS</h2>
 
@@ -63,7 +63,7 @@ const Contact = () => {
               </a>
             </div>
             <div>
-              <a href="http://wa.me/543413710649" target="_blank">
+              <a href="http://wa.me/543416843153" target="_blank">
                 <SocialIcon
                   network="whatsapp"
                   title="Whatsapp"
