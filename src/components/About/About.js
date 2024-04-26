@@ -1,5 +1,5 @@
 import "./About.css";
-import aboutImg from "../../img/about.JPG";
+import aboutImg from "../../img/about_1.jpg";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-img" data-aos="zoom-in">
           <img src={aboutImg} />
         </div>
-        <div className="d-flex flex-column flex-grow-0 about-text">
+        <div className="d-flex flex-column about-text">
           <h1
             data-aos="fade-left"
             className="fw-semibold text-center text-sm-start mb-4"

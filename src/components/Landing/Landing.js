@@ -30,7 +30,10 @@ const Landing = () => {
 
   return (
     <>
-      <div className="d-flex flex-column align-items-center intro">
+      <div
+        fetchpriority="high"
+        className="d-flex flex-column align-items-center intro"
+      >
         <div className="animate__animated animate__fadeIn mb-auto mt-auto">
           <h1 className="pb-2">Eficiencia, innovación y equipo</h1>
           <h2 className="px-3">La nueva generación de MIPP</h2>

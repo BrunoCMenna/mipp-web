@@ -22,7 +22,7 @@ const Contact = () => {
           </h4>
           <h4 className="mb-3">
             <FaPhone className="fs-6" />
-            <span className="h6 mx-2"> 341-684-3153</span>
+            <span className="h6 mx-2"> 341-371-0649</span>
           </h4>
           <h4 className="mb-3">
             <IoLocationSharp style={{ marginLeft: "-2px" }} />{" "}
@@ -41,16 +41,16 @@ const Contact = () => {
               <a href="https://www.instagram.com/mippsrl" target="_blank">
                 <SocialIcon
                   network="instagram"
-                  bgColor="var(--secondary)"
+                  bgColor=""
                   title="Instagram"
                   data-aos="zoom-out"
                   data-aos-offset="50"
                 />
               </a>
             </div>
-            {/* <div>
+            <div>
               <a
-                href="https://www.facebook.com/profile.php?id=100090602692290&mibextid=JRoKGi"
+                href="https://www.facebook.com/profile.php?id=100090346159617"
                 target="_blank"
               >
                 <SocialIcon
@@ -61,7 +61,7 @@ const Contact = () => {
                   data-aos-offset="50"
                 />
               </a>
-            </div> */}
+            </div>
             <div>
               <a href="http://wa.me/543413710649" target="_blank">
                 <SocialIcon

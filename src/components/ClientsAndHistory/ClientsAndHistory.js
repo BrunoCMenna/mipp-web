@@ -1,6 +1,6 @@
 import "./ClientsAndHistory.css";
 
-import bannerPng from "../../img/banner.JPG";
+import bannerPng from "../../img/banner1.jpg";
 import clientLogos from "../../clientLogos.js";
 
 const ClientsAndHistory = () => {
@@ -20,15 +20,13 @@ const ClientsAndHistory = () => {
           <div className="row justify-content-center gap-2 gap-md-5 mt-4">
             {clientLogos.map((item, index) => (
               <div key={index} className="client-item my-5">
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={item.image}
-                    alt={`imagen-${index}`}
-                    data-aos="zoom-out"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
-                  />
-                </a>
+                <img
+                  src={item.image}
+                  alt={`imagen-${index}`}
+                  data-aos="zoom-out"
+                  data-aos-delay="0"
+                  data-aos-duration="1000"
+                />
               </div>
             ))}
           </div>
