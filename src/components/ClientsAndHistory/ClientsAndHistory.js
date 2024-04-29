@@ -14,8 +14,19 @@ const ClientsAndHistory = () => {
               data-aos-duration="1000"
               className="fw-semibold pb-3 text-center"
             >
-              ¿CON QUIÉNES TRABAJAMOS?
+              NUESTROS CLIENTES
             </h1>
+          </div>
+          <div
+            data-aos="fade-up"
+            className="text-center mx-auto mb-5"
+            style={{ textWrap: "balance" }}
+          >
+            <p>
+              Estos son algunos de nuestros clientes más importantes. Nos
+              enorgullece la fidelidad de ellos, que refleja nuestra capacidad
+              para cumplir con los más altos estándares de calidad.
+            </p>
           </div>
           <div className="row justify-content-center gap-2 gap-md-5 mt-4">
             {clientLogos.map((item, index) => (
