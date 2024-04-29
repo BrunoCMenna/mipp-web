@@ -55,7 +55,7 @@ const OurServices = () => {
               </p>
             </li>
             <li data-aos="fade-up">
-              <b>Trabajo con una amplia variedad de materiales plásticos:</b>{" "}
+              <b>Trabajamos con una amplia variedad de materiales plásticos:</b>{" "}
               <p>
                 Desde ABS, PBT, PVC, PP (POLIPROPILENO) PE (POLIETILENO) PS
                 (POLIESTIRENO), PET, POLICARBONATO, entre otros. Siempre
