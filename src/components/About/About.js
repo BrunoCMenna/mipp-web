@@ -30,7 +30,7 @@ const About = () => {
             integral y de alta calidad.
           </p>
           <p data-aos="fade-up">
-            Con 33 años de trayectoria, estamos firmemente comprometidos con la
+            Con 34 años de trayectoria, estamos firmemente comprometidos con la
             calidad y la satisfacción de nuestros clientes. Trabajamos día a día
             para fomentar el crecimiento y bienestar de nuestros clientes,
             empleados y proveedores.
